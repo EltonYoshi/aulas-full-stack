@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--imagine que action é uma ação criada no back-end de um site, o input simplesmente chama essa ação-->
+    <!--esse form procura um "back-end" em uma pasta /cadastro-->
+    <!--o POST é para informações que são restritas-->
+    <!--se você usar GET, suas informações são expostas no endereço do site-->
+    <h1>Formulário 1</h1>
+    <form method="post" action="/cadastro">
+        <input type="text" name="nome">
+        <input type="text" name="email">
+        <input type="submit">
+    </form>
+
+    <!--nesse caso https://www.youtube.com/watch?v=EUhmsYlYb1k perceba que esse link tem um "v" depois de watch, que é a action, esse "v" é o nome. depois do "=" tem o que será pesquisado-->
+    <h1>Formulário 2</h1>
+    <form method ="get" action="https://www.youtube.com/watch">
+        <input type="text" name="v" >
+        <input type="submit">
+
+    </form>
+    <h1>Tipos de input</h1>
+    <!--tipos de input-->
+    <form method="get" action="">
+        <input type="password" name="senha"><br>
+
+        <!--O VALUE é para, no servidor, identificar o que cada input representa e quais foram marcados para, assim, armazenar os dados-->
+        <input type="checkbox" name="curso" value="op1">React Native<br>
+        <input type="checkbox" name="curso" value="op2">React JS<br>
+
+        <input type="radio" name="gender" value="
+        m"> masculino <br>
+        <input type="radio" name="gender" value="f"> feminino <br>
+        <input type="reset" value="limpar"><br>
+
+        <input type="submit" value="enviar">
+    </form>
+
+    <h1>Tag Select</h1>
+    <form method="GET" action="">
+        <select name="estado" size="3">
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP" selected>São Paulo</option>
+            <option value="RS" selected>Rio Grande do Sul</option>
+            <option value="MG" selected>Minas Gerais</option>
+        </select> <br>
+        <input type="submit">
+    </form>
+
+    <h1>Formulário de Contato</h1>
+    <form method="GET" action="">
+        <input type="" name="assunto"><br>
+        <textarea name="mensagem"></textarea><br>
+        <input type="submit">
+    </form>
+    <h1>Novos Tipos de Input do HTML5</h1>
+    <p style="color: red;">há a possibilidade de algum deles não funcionar em alguns navegadores ou dispositvos, por falta de compatibilidade </p> <br>
+
+    <form method="get" action="">
+        <input type="color" name="cor"> 
+        <br>
+        <input type="date" name="data" max="2018-12-"> 
+        <br>
+        <input type="file" name="arquivo">
+        <br>
+        <input type="number" name="numérico" min="5" max="10">
+        <br>
+        <input type="range" name="intervalo" min="5">
+        <br>
+        <input type="tel" name="telefone">
+        <br>
+        <input type="email" name="email">
+        <br>
+        <input type="submit">
+
+    </form>
+    <h1>Tags semânticas</h1>
+    <header>
+        <nav></nav>
+    </header>
+
+    <!--seção do site-->
+    <section>
+
+    </section>
+    <!---->
+    <article>
+
+    </article>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

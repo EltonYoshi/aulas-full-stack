@@ -1,0 +1,17 @@
+img {
+    width: 420px;
+    /*transform: rotate(45Deg);*/
+
+    /*Modifica da escala na horizontal e na vertical, sendo que 1 dobra o tamanho e 0.5 é a metade*/
+    /*transform: scale(0.5, 1);*/
+    transform: skew(5Deg, 10Deg) scale(0.5, 1);
+
+
+}
+
+div{
+    width: 420px;
+    height: 420px;
+    background-color: blue;
+    transform: skew(5Deg, 10Deg) scale(0.5, 0.5);
+}

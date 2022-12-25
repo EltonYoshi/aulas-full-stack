@@ -1,0 +1,20 @@
+.btn{
+    display: inline-block;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    transition-property: background-color, padding;
+    transition-duration: 2s;
+    transition-delay: 1s;
+    transition-timing-function: ease-out;
+
+    /*em uma linha, propriedade duração delay timming function*/
+    transition: background-color 500ms 1s, padding 1s;
+}
+
+.btn:hover{
+    background-color: aqua;
+    padding-left:30px ;
+    padding-right:30px ;
+}

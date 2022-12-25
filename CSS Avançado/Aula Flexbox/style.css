@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    /*Ele tenta manter o elemento 200px X 200px, portanto ele quebra a linha*/
+    flex-wrap: nowrap;
+    /*
+    flex-flow: column wrap;
+    */
+
+    justify-content: center;
+    align-items: center;
+    /*Perceba que com o content, não há um espaço entre os elementos, como tinha no align-items, visto que o align-items tem a tendência de centralizar os elementos conforme suas linhas, enquanto o align-content funciona como se fosse somente uma linha*/
+    align-content: center;
+
+    background-color: gray;
+    height: 500px;
+    color: white;
+}
+.r1{
+    /*flex-grow: 1;*/
+    background-color: red;
+}
+.r2{
+    /*1 determina que o elemento pode encolher e 0 que não pode
+    Obs.: o padrão é 1*/
+    /*flex-shrink: 0;*/
+
+    /*O order padrão é 0, logo se você colocar um número maior q 0. o elemento passará a ser o ultimo*/
+    /*order: 3;*/
+    background-color: blue;
+    /*O aling-self é tipo um align items só que para um elemento em especifico*/
+    align-self: flex-start;
+}
+.r3{
+    /*1 determina que o elemento pode esticar e preencher o espaço vazio e 0 não
+    Obs.: o padrão é 0 e se você colocar um número maior q 1, tipo 2, ele terá o dobro do tamanho dos outros sempre, mantendo portanto um proporção*/
+    /*flex-grow: 1;*/
+
+    background-color: blueviolet;
+}
+.rect{
+    width: 200px;
+    height: 200px;
+}

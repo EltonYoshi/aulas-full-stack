@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+
+    <script>
+
+        /*De forma simplificado o Local Storage serve como
+        um "csv" para você armazenar Strings*/
+
+        //localStorage.setItem("nome", "Igor");
+        //let name = localStorage.getItem("nome");
+        //console.log(name);
+        //localStorage.removeItem("nome");
+
+        //Armazenar Strings
+        var onload = function(){
+            //nessa caso onload é só o nome que eu dei msm
+            let nome = localStorage.getItem("nome");
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = nome;
+        }
+
+        function atualizar(element){
+            let valor = element.value;
+            let h1 = document.getElementById("nome");
+            h1.innerHTML = valor;
+
+            localStorage.setItem("nome", valor);
+        }
+
+        /*Ao settar um número, você perceberá que ele
+        se transformará em uma String na hora de ser
+        gettado*/
+        //localStorage.setItem("numero", 5);
+        //let numero = localStorage.getItem("numero");
+
+       // console.log(numero);
+
+
+        /*com o JSON podemos pegar um objeto e transformar em string
+        e colocá-lo no LocalStorage */
+       let aluno = {
+        nome: "Elton",
+        n1: "8.5"
+       }
+       
+       localStorage.setItem("aluno", JSON.stringify(aluno));
+       let a = localStorage.getItem("aluno");
+       //gettado no formato String direto pelo LocalStorage
+       console.log(a)
+
+       //gettado no formato Objeto com o JSON
+       console.log(JSON.parse(a));
+
+       //apaga tudo
+       localStorage.clear();
+
+    </script>
+
+</head>
+<body>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="atualizar(this)">
+
+
+</body>
+</html>

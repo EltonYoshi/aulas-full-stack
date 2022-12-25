@@ -1,0 +1,41 @@
+@keyframes changeColor {
+    0%{background-color: red; width: 200px;}
+    25%{background-color: green;}
+    50%{background-color: yellow; width: 400px;}
+    100%{background-color: blue; width: 200px;}
+}
+@keyframes move {
+    0%{left: 0px;}
+    100%{left: 300px;}
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: solid;
+    position: relative;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+
+    /*Você pode declarar uma animação em uma linha*/
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+}
+.div1{
+    animation-timing-function: linear;
+}
+.div2{
+    animation-timing-function: ease;
+}
+.div3{
+    animation-timing-function: ease-in;
+}
+.div4{
+    animation-timing-function: ease-in-out;
+}
+.div5{
+    animation-timing-function: ease-out;
+}

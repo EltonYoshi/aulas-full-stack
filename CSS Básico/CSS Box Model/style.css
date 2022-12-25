@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    background-color: red;
+    padding: 5px;
+    border: 5px solid blue;
+    margin: 10px;
+}
+.content {
+    background-color: #ddd;
+    border: 5px solid green;
+    padding: 5px;
+    /* outline não faz parte do box model, logo,
+    ele sobrepõe elementos do box model como o padding */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 10px solid blue;
+    /*ao adiciona o border 10px, o meu quadrado passa a ter, na verdade, mais de 100px de largura e altura, já que o border faz parte do box model.*/
+}
+.square2 {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+}
+/* perceba que tendo 120px de largura e altura, ele passa a ter o mesmo tamanho que o outro*/
+.square3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 10px solid blue;
+    box-sizing: border-box;
+    /* perceba que ao colocar o box-sizing, o quadrado passa a respeitar as dimensões da largura e altura*/
+}

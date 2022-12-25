@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <script>
+        function playMusica(){
+            let song = document.getElementById("music");
+            song.play();
+            //song.pause();
+        }
+
+       
+    </script>
+</head>
+<body>
+    <audio  id= "music" controls>
+
+        <source src="./assets/Guns N Roses - Sweet Child O Mine (full guitar cover).mp3" type="audio/mp3">
+    </audio>
+    <button style="display: block;" onclick="playMusica()"> Clica ai</button>
+</body>
+</html>

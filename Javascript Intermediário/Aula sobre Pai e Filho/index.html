@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Pai e Filho</title>
+    <script>
+        //onload só que dentro do js
+        window.onload = function(){
+            let d1 = document.getElementById("d1");
+            let h1 = d1.children[0];
+            console.log(d1.children);
+            console.log(h1)
+            
+            /*nesse caso o js vai pegar todos os elementos
+            que são filhos de d1, que estão abaixo dele, formando
+            um array*/
+
+            console.log(h1.parentElement);
+            /*da mesma forma que tu pode pegar o filho do
+            elemento, tu também pode pegar o pai dele, ou seja,
+            o elemento que está a cima dele*/
+
+
+            let h = document.getElementsByTagName("h1");
+            console.log(h);
+            for(let n of h){
+                console.log(n);
+                n.addEventListener("click", quemEhPai);
+            }
+
+            function quemEhPai(e){
+                let t = e.target;
+                /*o target é tipo um this, só que sem colocar ele
+                no html*/
+                console.log(t.parentElement);
+            }
+        }
+
+    </script>
+
+
+</head>
+<body>
+    <div id="d1">
+        <h1>Título</h1>
+        <p>texto</p>
+    </div>
+
+    <div id="d2">
+        <h1>Título 2</h1>
+        <p>texto2 </p>
+    </div>
+
+</body>
+</html>

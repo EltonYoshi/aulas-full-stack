@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+
+    <style type="text/css">
+        body {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="background-color: blue;">
+
+        <div>Esta é uma DIV normal</div>
+        <div>E aqui a história <div style = "background-color: red; width: 500px;">DIV de dentro</div> continua</div>
+        <!--display block completa toda linha por isso o div dentro da div fica em outra linha-->
+        <!--perceba que quando o elemento já é por natureza um display block, a sua largura PODE ser alterada-->
+
+    </div>
+    <div>
+
+        <p style="margin: 0;">Este é um parágrafo normal</p>
+        <p style="margin: 0;">E aqui a história continua</p>
+        <!--por natureza o parágrafo possui um margin-->
+    </div>
+
+    <p>
+        
+        Aqui eu tenho o início de um parágrafo <span style="background-color: green; width: 500px;display:inline-block">uma SPAN no meio</span> E o fim do parágrafo
+        <!--display inline não completa toda a linha por isso o span não está em outra linha-->
+        <!--perceba que quando o elemento já é por natureza um display inline, a largura NÃO PODE ser alterada-->
+        <!--a diferença entre o display inline e o inline block é que o inline block tem a característica do inline de manter na linha junto as caracterísicas do block normal-->
+    </p>
+
+    <p style="background-color:aqua ;">
+        Aqui eu tenho o início de um parágrafo <div style="background-color: brown;">uma DIV no meio</div> E o fim do parágrafo
+        
+    </p>
+
+    <p>
+        Aqui eu tenho o início de um parágrafo <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/05/Arquivo-Computador-PNG.png " style="width: 100px; height: 100px; display: none;"> E o fim do parágrafo
+    </p>
+
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+
+#titulo{
+    color: black;
+    background-color: blue;
+
+}
+#transparente{
+    color: rgba(0,100,200,0.6)
+}
+h1, h2 {
+    color: rgb(0,100,200);
+}
+
+#principal{
+    color: black;
+
+}
+p {
+    font-style: italic;
+    color: red;
+}
+.texto_verde{
+    color: green;
+}

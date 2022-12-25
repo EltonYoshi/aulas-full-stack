@@ -1,0 +1,19 @@
+{
+  "name": "editorimage",
+  "version": "1.0.0",
+  "description": "Editor de Imagem",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elton Guimarães",
+  "license": "ISC",
+  "dependencies": {
+    "gifsicle": "^5.2.1",
+    "pngquant-bin": "^6.0.1",
+    "sharp": "^0.31.2"
+  },
+  "devDependencies": {
+    "compress-images": "^2.0.5"
+  }
+}

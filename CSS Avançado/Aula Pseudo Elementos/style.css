@@ -1,0 +1,35 @@
+/*Pseudo elemento first-line que muda só a primeira linha de um elemento*/
+p::first-line{
+    color: red;
+}
+/*First-letter muda a primeira letra do texto*/
+p::first-letter{
+    color: blue;
+    font-size: 5rem;
+}
+
+li {
+    list-style: none;
+    /*margin-left: 500px;*/
+    /*Se você utilizar o list-style e trocar o conteúdo da imagem, essa imagem tem que já ser do tamanho certo*/
+   /* list-style: url(https://cdn.icon-icons.com/icons2/2596/PNG/512/check_one_icon_155665.png);*/
+}
+
+/*O before permite que eu coloque um conteúdo antes do elemento, o after faz a mesma coisa só que ao contrário*/
+li::before{
+    /*Se você utilizar o before você pode trocar o tamanho da imagem antes do texto*/
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.icon-icons.com/icons2/2596/PNG/512/check_one_icon_155665.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/*Selection cria um estilo para o texto que for selecionado/marcado*/
+p::selection{
+    background-color: yellow;
+    color: orange;
+}

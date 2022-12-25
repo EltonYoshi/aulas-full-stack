@@ -1,0 +1,60 @@
+.container{
+    color: white;
+    display: grid;
+    height: 500px;
+    background-color: aliceblue;
+    /*Enquanto o flex box se baseia em um sistema de caixas dentro de caixas, o grid é como se fosse um sistema de tabelas*/
+    /*Então, nós temos que definir o numero de linhas e colunas, sendo que auto é conforme o tamanho da tela ou do elemento pai*/
+    grid-template-rows:  100px 100px;
+
+    /*Cada auto corresponde a uma coluna ou uma linha, no caso de rows. Mas tambem pode ser definidas porcentagens ou tamanhos fixos para as colunas*/
+
+    /*grid-template-columns: 10% 150px auto;*/
+
+    /*Além disso, o grid tem uma unidade de medida exclusiva, o fr, que significa uma fração de algo*/
+
+    /*grid-template-columns: 1fr 3fr 1fr;*/
+    /*Isso significa que o do meio sempre terá 3 vezes o tamanho que os elementos das pontas*/
+
+    /*Grid-template em uma linha*/
+    /*grid-template: auto auto / 1fr 3fr 1fr;*/
+
+    /*O grid gap é um espaçamento que pode ser definido nas linhas ou nas colunas*/
+    /*grid-row-gap: 10px;
+    grid-column-gap: 10px;*/
+    /*Define um valor para a coluna e para a linha ao mesmo tempo*/
+
+    
+    grid-template-columns: auto auto auto;
+
+    /*Para o align items funcionar o tamanho da linha tem que ser auto, visto que se trata do tamanho da grid, logo, para ele mudar a posição do elemento, ele deve mudar a grid, então a mesma não pode ser fixa*/
+    /*o conteúdo se posiciona dentro da grid*/
+    align-items: center;
+    justify-items: center;
+
+    /*Diferente dos justify e align items, os content se baseiam no elemento container, ou seja, a posição não depende das linhas e colunas definidas no grid, mas sim do próprio container*/
+    /*a grid que agora é do tamanho do conteúdo, é posicionada dentro container*/
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+
+
+
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}

@@ -1,0 +1,76 @@
+#paragrafo1{
+    color: blue;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 35px;
+    text-decoration: line-through underline overline;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    word-spacing: 20px;
+    text-shadow: 1px 1px grey ;
+    /* text-shadow: deslocamento para direito deslocamento para baixo cor*/
+
+}
+.links{
+    text-decoration: none;
+    color: red;
+    cursor: crosshair;
+    /*background-color: aqua;*/
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    border: 2px solid aqua;
+}
+.links:visited {
+    color: blue;
+}
+.links:hover {
+    background-color: aqua;
+}
+.links:active {
+    background-color: red;
+}
+/*é quando clica*/
+#paragrafo2 {
+    font-family: meupau, "Comic Sans MS", Sans-serif;
+    /*a vírgula representa as familias que podem aparecer caso a outra não tenha no sistema*/
+    font-style: italic;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+#paragrafo3{
+    font-family:'Roboto', sans-serif;
+
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+}
+/* é usado para colocar fonts baixadas do pc
+@font-face {
+    font-family: Minha font;
+    src: url();
+}*/
+
+
+/* Listas */
+
+ul {
+    list-style-type: circle; /*pode botão uma url para personalizar*/
+    list-style-position: inside;
+    margin: 0;
+    padding: 10px;
+    background-color: aquamarine;
+}
+ol{
+    list-style-type: upper-roman;
+}
+li {
+    border: 1px solid;
+    background-color: yellow;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+
+}

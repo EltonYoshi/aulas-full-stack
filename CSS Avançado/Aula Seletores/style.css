@@ -1,0 +1,75 @@
+/*
+Seletores
+.nome-classe
+#nome-id
+nomedatag
+*/
+ 
+/*O * é um seletor que seleciona todos os elementos*/
+/*
+*{
+    background-color: cornflowerblue;
+    margin: 0;
+}
+*/
+
+/*Seletor composto é separado por uma vírgula*/
+/*.p2, header{
+    background-color: aqua;
+}*/
+
+/* Esse é o seletor específico, ou seja, ele vai pegar elementos que estão dentro de um elemento em específico, por exemplo: div p, só vai funcionar para os elementos p que estão dentro de uma div*/
+/*div p {
+    background-color: aqua;
+}
+/*
+
+/* Esse é parecido com o seletor específico, porém o < diz que o style só vai funcionar para os elementos p que tem um pai div, logo, se o pai de p for uma section e não uma div, o style n vai funcionar*/
+/*div > p {
+    background-color: aqua;
+}
+*/
+
+/* Usando o + para separar os seletores, o style irá funcionar para os elementos que estão após o outro, por exemplo: header + p, que irá pegar todos os p que estão logo após todos os header*/
+/*header + p {
+    background-color: blue;
+}*/
+
+/*Trocando o + por um ~, a ideia será a mesma porém todos e qualquer p depois do header serão afetados*/
+/*header ~ p {
+    background-color: aqua;
+}*/
+
+/*Todo elemento que tiver width será afetado*/
+/*[width] {
+    background-color: aqua;
+}*/
+
+/*Todo elemento que tiver width, especificamente, 500*/
+/*
+[width = "500"]{
+    background-color: brown;
+}
+/*
+
+/*Ele vai pegar todos os atributos title, que tem a palavra titulo no nome*/
+/*[title ~= "titulo"]{
+    background-color: pink;
+}
+*/
+
+/*Ele vai pegar todos os atributos title, que começarem com a letra t*/
+/*[title ^= "t"]{
+    background-color: pink;
+}
+*/
+
+/*Ele vai pegar todos os atributos title, que terminam com o numero 1*/
+/*[title $= "1"]{
+    background-color: pink;
+}*/
+
+/*Ele vai pegar todos os atributos title, que tem algum "tu" em algum lugar*/
+/*[title *= "tu"]{
+    background-color: pink;
+}*/

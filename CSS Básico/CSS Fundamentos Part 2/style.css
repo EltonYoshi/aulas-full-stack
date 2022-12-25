@@ -1,0 +1,152 @@
+body {
+    background-image: url(https://media.freestocktextures.com/cache/0d/42/0d42eeb83ad3a56c97468d69721b2c18.jpg);
+    background-repeat: no-repeat;
+    /*bakground-repeat: repeat-y, repeat-x, no-repeat*/
+    background-size: cover;
+    /*para cobrir toda página*/
+ 
+}
+
+p {
+    color: red;
+}
+
+#paragrafo1{
+    background-image: url(https://as1.ftcdn.net/v2/jpg/01/39/65/40/1000_F_139654088_uqaXhPOb8NtPPacfFiaI43QcnpBGdsyN.jpg);
+    background-attachment: fixed;
+    /*é aquele negócio para deixar a imagem fixa*/
+    background-position: center;
+}
+#paragrafos {
+    background-image: url(https://st2.depositphotos.com/4164031/7808/i/600/depositphotos_78083932-stock-photo-rough-concrete-background.jpg);
+}
+/*Unidades de Medida Fixas
+essas medida são usadas para determinar medidas que não se alteram
+*/
+
+#cm {
+    background-color: blue;
+    width: 1cm;
+    height: 1cm;
+}
+#mm {
+    background-color: red;
+    width: 1mm;
+    height: 1mm;
+}
+#in {
+    background-color: blue;
+    width: 1in;
+    height: 1in;
+}
+#px {
+    background-color: red;
+    width: 10px;
+    height: 10px;
+}
+#pt {
+    background-color: blue;
+    width: 10pt;
+    height: 10pt;
+}
+#pc {
+    background-color: red;
+    width: 1pc;
+    height: 1pc;
+}/*é o equivalente a 12 pontos*/
+
+/*Unidades de Medida Relativas*/
+.container1{
+    font-size: 25px;
+    width: 300px;
+    background-color: red;
+
+}
+.inside1{
+    font-size: 2em;
+    /* em faz referência ao tamanho do elemento pai (font-size do container) nesse caso ele está dando 50px, pois é 2 x 25*/
+    width: 1em;
+    /*Aqui vai ser 50px pois ele faz referência ao elemento, no caso a fonte, logo, vai ser 1x50*/
+    background-color: blue;
+}
+
+html {
+    font-size: 20px;
+}
+
+.container2{
+    font-size: 25px;
+}
+
+.inside2{
+    font-size: 1rem;
+    /*faz referência ao elemento raiz, no caso, o próprio html*/
+}
+
+.container3{
+    width: 50vw;
+    /* 50% da largura da janela, ou seja. vai mudar conforme o tamanho da janela*/
+    /* se eu coloar vh no width, ele mudará o width dependendo da altura da janela*/
+    background-color: red;
+}
+.inside3{
+    width: 100px;
+    background-color: blue;
+
+}
+.container4{
+    width: 50vmin;
+    /*ele aplica a porcentagem para o menor dimensão da janela
+    existe o vmax, que é o contrário*/
+
+    background-color: red;
+}
+.inside4{
+    width: 100%;
+    /*A porcentagem faz referência ao tamanho do elemento pai, no caso, o container4*/
+    background-color: blue;
+
+}
+
+/*Margin e Padding*/
+#base {
+    height: 10px;
+    background-color: green;
+}
+#container5 {
+    background-color: blue;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#container6 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+/*percebe-se que o margin aumenta o espaço externo do conteúdo, enquanto o padding é o interno.*/
+
+/*Border*/
+.borda {
+    border-width: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-top-style: none;
+    /*border-radius 50% vira um círculo*/
+}
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+.dotted {
+    border-style: dotted;
+}
+.dashed {
+    border-style: dashed;
+}
+/*border em uma linha
+boder: espessura estilo cor
+*/

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamentos e Posições</title>
+    <style>
+        body {
+            font-size: 1.2rem;
+        }
+
+        #square {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+
+            margin: auto;
+            /* ao colocar auto, o margin se mantém de uma forma que o elemento fique em uma posição centralizada, bem como se fosse no margin-left ele ficaria totalmente para a esquerda*/
+        }
+        img {
+            display: block;
+            margin: auto;
+            /* o display tem que ser block para funcionar
+            o margin auto*/
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+        .quadrado-red {
+            width: 100%;
+            position: sticky;
+            top: 0;
+            /*o sticky é tipo um fixed, porém os outros elementos consideram ele até o momento da rolagem*/
+            background-color: red;
+        }
+        .quadrado-blue {
+
+            /*position: fixed;
+            left: 500px;*/
+            /* o fixed é relativo ao viweport e não ao elemento pai como o absolute, logo, ele fica fixo de acordo com a visão*/
+
+
+            /*position: absolute;
+            left: 200px;
+            bottom: 0;*/
+            /*no absolute os outros elementos não consideram você, é mais ou menos como se você estivesse acima de todos, logo, ele não é relativo ao posicionamento inicial*/
+            /*lembrando que ele se torna relativo ao primeiro elemento pai que não seja static*/
+
+            /*position: relative;
+            left: 400px;
+            top: 200px;*/
+            /*relative permite usar essas direções*/
+            /*lembrando que ele é relativo a posição que ele ja estava, logo se ja tinha outro elemento de 100px em cima dele, ele irá manter essa regra*/
+            /*imagine que os outros elementos vão continuar achando que você está lá */
+            background-color: blue;
+        }
+        .quadrado-green {
+            background-color: green;
+        }
+        .quadro {
+            position: relative;
+            width: 500px;
+            height: 4000px;
+            border: 1px solid gray;
+        }
+
+        .card{
+            position: relative;
+            float: left;
+            width: 250px;
+            height: 150px;
+            border: 2px solid green;
+            text-align: center;
+        }
+        .card2{
+            clear: left;
+            float: left;
+            border: 2px solid green;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            
+        }
+        .c1{
+            line-height: 150px;
+        }
+        .c2{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <!--*****Alinhamento Horizontal*****-->
+    <div id="square">
+    </div>
+
+    <img src="https://s2.glbimg.com/eQF6zOgS3xiHCEIVDQOGj9ldXSE=/0x0:6720x4480/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/a/H/yjEAjIRHukWhYgOVHAQg/nave11.jpg" style = "width: 200px;" alt="PC">
+
+
+    <!--*****Posições*****-->
+
+
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+
+    <br><br><br>
+
+    <!--*****Alinhamento Vertical*****-->
+    <div class="card">
+        <div class="c1">
+            Igor Oliveira
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="c2">
+            Igor Oliveira
+        </div>
+    </div>
+
+    <div class="card2">
+        <div class="c3">
+            Igor Oliveira
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

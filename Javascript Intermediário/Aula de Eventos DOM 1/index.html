@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de DOM</title>
+
+
+    <style>
+        #h1 {
+            display: inline-block;
+            padding: 20px;
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <script src="./script.js"></script>
+
+    <h1 onclick="h1Click()">Clique em mim</h1>
+    <!--Perceba que o this está retornando o h1 e
+    depois o modificando -->
+    <h1 onclick="this.style.color = 'red'">Clique para trocar de cor</h1>
+
+    <input id = "texto" type="text" onchange = "changeH1(this)">
+
+    <h1 id="escondido">Eu vou ficar escondido</h1>
+
+    <h1 id="h1" onclick="hideH1()">Clique aqui</h1>
+</body>
+</html>

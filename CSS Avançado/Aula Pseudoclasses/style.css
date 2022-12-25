@@ -1,0 +1,28 @@
+/*Só os elementos em foco, vão ficar com o color red*/
+input:focus {
+    color: red;
+}
+
+/*Da o estilo para o primeiro elemento filho de ul*/
+/*
+li:first-child {
+    color: blue;
+}
+*/
+/*Como o nome ja diz, ele pegará o primeiro elemento do tipo dele*/
+li:first-of-type{
+    color: blue;
+}
+/*o nth-child segue a ordem da ul, logo, o primeiro elemento é o h1 o segundo é o item 1*/
+/*
+li:nth-child(3){
+    color:red;
+}
+*/
+
+/*Esse nãos segue o ul, mas sim o tipo, portanto, de fato o item 3 será o terceiro elemento*/
+li:nth-of-type(3){
+    color: red;
+}
+
+/*Se você colocar o odd no lugar do número você terá todos os números impares, e even para os pares*/

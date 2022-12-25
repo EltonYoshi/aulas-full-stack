@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer e Intervalo</title>
+
+    <script>
+        function mudarCor(){
+            let h = document.getElementsByTagName("h1")[0];
+            h.style.color = "red";
+        }
+
+        var numero = 0;
+        function atualizarTexto(){
+            let h = document.getElementsByTagName("h1")[0];
+            h.innerHTML += " " + numero;
+            numero++;
+        }
+
+        var intervalo;
+        function iniciar(){
+            //let h = document.getElementsByTagName("h1")[0];
+            //h.innerHTML = "Novo Título";
+
+            // ele só vai mudar uma vez depois de 5 segundos
+           //setTimeout(mudarCor, 5000);
+
+           //a cada 3 segundos ele vai atualizar o texto
+           intervalo = setInterval( atualizarTexto, 2000)
+
+        }
+
+        function parar(){
+            clearInterval(intervalo);           
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Título</h1>
+    <input onclick = "iniciar()" type="submit" value="iniciar">
+    <input onclick = "parar()" type="submit" value="parar">
+</body>
+</html>

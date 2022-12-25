@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Seletores</title>
+</head>
+<body>
+
+    <div>
+
+        <h1 title = "titulo 1" width = 300>Título 1</h1>
+        <h2 title = "titulo 2" width = 500>Título 2</h2>
+        <h3 width = 500>Título 3</h3>
+        <h4 width = 300>Título 4</h4>
+        <h5 title = "texto 1">Título 5</h5>
+        <h6>Título 6</h6>
+
+    </div>
+    <p>Paragrafo Extra</p>
+    <p>Paragrafo Extra</p>
+    <header>
+
+        <p>Paragrafo 1</p>
+        <p>Paragrafo 2</p>
+        <p>Paragrafo 3</p>
+        <p">Paragrafo 4</p>
+        <p>Paragrafo 5</p>
+        <p>Paragrafo 6</p>
+
+    </header>
+    <p>Paragrafo Extra</p>
+    <div>
+        
+        <p class="p2">Paragrafo 1</p>
+        <p>Paragrafo 2</p>
+        <p>Paragrafo 3</p>
+        <p>Paragrafo 4</p>
+        <p>Paragrafo 5</p>
+        <p>Paragrafo 6</p>
+
+    </div>
+    <p>Paragrafo Extra</p>
+
+    <script>
+        //pega o primeiro elemento
+        //let titulos = document.querySelector("[title]");
+
+        //pega todos os elementos q tem "tu"
+        let titulos = document.querySelectorAll("[title*= 'tu']")
+        console.log(titulos)
+    </script>
+</body>
+</html>
